@@ -1,0 +1,31 @@
+
+    <button class="botao">Calcula</button>
+    <input class="numero">
+    <input class="tabuada">
+    <span class="resultado"></span>
+
+
+<script>
+
+    function seleciona(seletor){
+        return document.querySelector(seletor);
+    }
+
+    function calcula(numero, tabuada){
+        return numero*tabuada;
+    }
+
+    var botao = seleciona('.botao');
+    var numero = seleciona('.numero');
+    var tabuada = seleciona('.tabuada');
+    var resultado = seleciona('.resultado');
+
+    botao.addEventListener('click', function() {
+
+        resultado.textContent = numero.value * tabuada.value;
+
+    });
+
+               
+
+</script>
